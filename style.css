@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;/*The box-sizing property allows us to include the padding and border in an element's total width and height.
+    If you set box-sizing: border-box; on an element, padding and border are included in the width and height:*/
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;/*mujhe center me lana hai then use(flex/grid)*/
+    justify-content: center;/*justify-content horizontal align karega*/
+    align-items: center; /*align-items vertical align karega*/
+    background:linear-gradient(178deg,darkblue,purple);
+}
+
+.calculator{
+    border:2px solid black;
+    border-radius: 16px;
+    padding: 20px;
+    background:linear-gradient(45deg,#0a0a0a,#3a443a);
+    box-shadow: 0px 3px 15px rgba(113,115,119,0.5);/*if value is -ve then upper ke taraf show hoga*/
+}
+input{
+    width:250px;
+    border:none;
+    background: transparent;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0px 3px 15px rgba(112,113,114,0.5);
+    font-size: 40px;
+    text-align: right;
+    color: #ffffff;
+}
+input::placeholder{
+    color: #fff;
+}
+button{
+    border:none;
+    width:44px;
+    height: 44px;
+    margin: 10px;
+    border-radius: 10px;
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    box-shadow: -8px -8px 15px rgba(112,113,114,0.5);/*0.5 will tell you its intensity*/
+    cursor:pointer;
+}
+.equalbtn{
+    background-color: orangered;
+}
+.operator{
+    color:green;
+}
